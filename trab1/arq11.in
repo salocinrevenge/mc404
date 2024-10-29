@@ -1,0 +1,1 @@
+./my_objdump -d exec3.x | cut -f1 | python3 -c "exec(\"import sys\nfor line in sys.stdin: print(' '.join(line.split()))\")" 
